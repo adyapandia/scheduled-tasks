@@ -5,7 +5,7 @@ from datetime import datetime
 import pandas
 
 MY_EMAIL = os.environ.get("MY_EMAIL")
-PASSWORD = os.environ.get("PASSWORD")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 letters_list = ["letter_1.txt", "letter_2.txt", "letter_3.txt"]
 mail_content = random.choice(letters_list)
