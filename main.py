@@ -1,10 +1,11 @@
+import os
 import smtplib
 import random
 from datetime import datetime
 import pandas
 
-my_email = "adyapandia@gmail.com"
-password = "nodw mpsd mkjb hikd"
+my_email = os.environ.get("my_email")
+password = os.environ.get("password")
 
 letters_list = ["letter_1.txt", "letter_2.txt", "letter_3.txt"]
 mail_content = random.choice(letters_list)
